@@ -3,3 +3,59 @@
 body{
     background-color: aqua;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+h1{
+    padding: 50px;
+    font-variant: small-caps;
+}
+header p{
+    padding-bottom: 50px ;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-left: 30px;
+    line-height: 2rem;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+section.imagem > p {
+    
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+
+.imagem{
+    background-color: rgba(51, 49, 49, 0.842);
+    color: white;
+}
+footer{
+    color: white;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+}
