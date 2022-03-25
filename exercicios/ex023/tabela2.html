@@ -10,8 +10,15 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
+            position: relative;
             border-collapse: collapse;
             width: 400px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: silver;
         }
         td, th{
             
@@ -22,8 +29,16 @@
             text-align: right;
         }
         thead{
-            background-color: grey;
+            background-color: black;
             color: white;
+        }
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color: black
+        }
+        tbody tr:nth-child(2n){
+            background-color: lightgrey;
         }
         tfoot{
             background-color: grey;
@@ -36,6 +51,7 @@
 
     <!-- ANATOMIA DE TABELAS GRANDES-
         TABLE 
+          CAPTION
            THEAD
              TR, TD, TH
            TBODY
@@ -44,10 +60,11 @@
              TR, TD, TH
              -->
             <table>
+                <caption> População da Unidades Federativas</caption>
                 <thead>
                   <tr>
-                      <th>Estado</th>
-                      <th>Populacao</th>
+                      <th scope="col">Estado</th>
+                      <th scope="col" style="width: 100px;">Populacao</th>
                   </tr>
                 </thead>
 
@@ -81,14 +98,113 @@
                        <td>Bahia</td>
                        <td class="num">665 642 22</td>
                    </tr>
+                   <tr>
+                       <td>Ceará</td>
+                       <td class="num">148 825,6</td>
+                   </tr>
+                   <tr>
+                       <td>Distrito Federal</td>
+                       <td class="num">5 822,1</td>
+                   </tr>
+                   <tr>
+                       <td>Espírito Santo</td>
+                       <td class="num">46 077,5</td>
+                   </tr>
+                   <tr>
+                       <td>Goiás</td>
+                       <td class="num">6 551 322</td>
+                   </tr>
+                   <tr>
+                       <td>Maranhão</td>
+                       <td class="num">6 861 924</td>
+                   </tr>
+                   <tr>
+                       <td>	Mato Grosso</td>
+                       <td class="num">	3 236 578</td>
+                   </tr>
+                   <tr>
+                       <td>Mato Grosso do Sul</td>
+                       <td class="num">2 630 098</td>
+                   </tr>
+                   <tr>
+                       <td>	Minas Gerais</td>
+                       <td class="num">20 777 672</td>
+                   </tr>
+                   <tr>
+                       <td>	Pará</td>
+                       <td class="num">8 101 180</td>
+                   </tr>
+                   <tr>
+                       <td>	Paraíba</td>
+                       <td class="num">3 950 359</td>
+                   </tr>
+                   <tr>
+                       <td>Paraná</td>
+                        <td class="num">11 112 062</td>
+                   </tr>
+                    <tr>
+                        <td>Pernambuco</td>
+                        <td class="num">9 297 861</td>
+                    
+                   </tr>
+                   <tr>
+                       <td>Piauí</td>
+                       <td class="num">3 198 185</td>
+                   </tr>
+                   <tr>
+                       <td>Rio de Janeiro</td>
+                       <td class="num">16 497 395</td>
+                   </tr>
+                   <tr>
+                       <td>Rio Grande do Norte</td>
+                       <td class="num">3 419 550</td>
+                   </tr>
+                   <tr>
+                       <td>Rio Grande do Sul</td>
+                       <td class="num">	11 228 091</td>
+                   </tr>
+                   <tr>
+                       <td>	Rondônia</td>
+                       <td class="num">1 755 015</td>
+                   </tr>
                 </tbody>
 
                 <tfoot>
                   <tr>
-                      <th>Total de habitantes</th>
+                      <th scope="row">Total de habitantes</th>
                       <td class="num"><strong>130 456 345</strong></td>
                   </tr>
                 </tfoot>
             </table>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio dolorum eveniet, suscipit dolores, libero aperiam quas illo nam hic pariatur fuga nulla obcaecati cumque ad reiciendis inventore sequi sint.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nostrum neque rerum obcaecati soluta eum consequuntur, officiis accusamus, deleniti incidunt illo distinctio id ipsam, natus corporis odio voluptate quam tempore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut eius laborum earum autem odit repudiandae eos cum consequuntur vel repellendus, similique cumque deleniti. Beatae exercitationem labore vero optio ipsam!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio id temporibus reiciendis quo placeat odit dolores modi molestias ut culpa fugiat, nobis, natus blanditiis accusamus facere sit doloremque dignissimos delectus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vitae laborum quia possimus velit cum quae eos, tenetur pariatur nihil, dolorem totam dicta ex aperiam impedit dignissimos officia exercitationem et.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio dolorum eveniet, suscipit dolores, libero aperiam quas illo nam hic pariatur fuga nulla obcaecati cumque ad reiciendis inventore sequi sint.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nostrum neque rerum obcaecati soluta eum consequuntur, officiis accusamus, deleniti incidunt illo distinctio id ipsam, natus corporis odio voluptate quam tempore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut eius laborum earum autem odit repudiandae eos cum consequuntur vel repellendus, similique cumque deleniti. Beatae exercitationem labore vero optio ipsam!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio id temporibus reiciendis quo placeat odit dolores modi molestias ut culpa fugiat, nobis, natus blanditiis accusamus facere sit doloremque dignissimos delectus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vitae laborum quia possimus velit cum quae eos, tenetur pariatur nihil, dolorem totam dicta ex aperiam impedit dignissimos officia exercitationem et.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio dolorum eveniet, suscipit dolores, libero aperiam quas illo nam hic pariatur fuga nulla obcaecati cumque ad reiciendis inventore sequi sint.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nostrum neque rerum obcaecati soluta eum consequuntur, officiis accusamus, deleniti incidunt illo distinctio id ipsam, natus corporis odio voluptate quam tempore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut eius laborum earum autem odit repudiandae eos cum consequuntur vel repellendus, similique cumque deleniti. Beatae exercitationem labore vero optio ipsam!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio id temporibus reiciendis quo placeat odit dolores modi molestias ut culpa fugiat, nobis, natus blanditiis accusamus facere sit doloremque dignissimos delectus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vitae laborum quia possimus velit cum quae eos, tenetur pariatur nihil, dolorem totam dicta ex aperiam impedit dignissimos officia exercitationem et.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio dolorum eveniet, suscipit dolores, libero aperiam quas illo nam hic pariatur fuga nulla obcaecati cumque ad reiciendis inventore sequi sint.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nostrum neque rerum obcaecati soluta eum consequuntur, officiis accusamus, deleniti incidunt illo distinctio id ipsam, natus corporis odio voluptate quam tempore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut eius laborum earum autem odit repudiandae eos cum consequuntur vel repellendus, similique cumque deleniti. Beatae exercitationem labore vero optio ipsam!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio id temporibus reiciendis quo placeat odit dolores modi molestias ut culpa fugiat, nobis, natus blanditiis accusamus facere sit doloremque dignissimos delectus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vitae laborum quia possimus velit cum quae eos, tenetur pariatur nihil, dolorem totam dicta ex aperiam impedit dignissimos officia exercitationem et.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio dolorum eveniet, suscipit dolores, libero aperiam quas illo nam hic pariatur fuga nulla obcaecati cumque ad reiciendis inventore sequi sint.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nostrum neque rerum obcaecati soluta eum consequuntur, officiis accusamus, deleniti incidunt illo distinctio id ipsam, natus corporis odio voluptate quam tempore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut eius laborum earum autem odit repudiandae eos cum consequuntur vel repellendus, similique cumque deleniti. Beatae exercitationem labore vero optio ipsam!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio id temporibus reiciendis quo placeat odit dolores modi molestias ut culpa fugiat, nobis, natus blanditiis accusamus facere sit doloremque dignissimos delectus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vitae laborum quia possimus velit cum quae eos, tenetur pariatur nihil, dolorem totam dicta ex aperiam impedit dignissimos officia exercitationem et.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora optio dolorum eveniet, suscipit dolores, libero aperiam quas illo nam hic pariatur fuga nulla obcaecati cumque ad reiciendis inventore sequi sint.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nostrum neque rerum obcaecati soluta eum consequuntur, officiis accusamus, deleniti incidunt illo distinctio id ipsam, natus corporis odio voluptate quam tempore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut eius laborum earum autem odit repudiandae eos cum consequuntur vel repellendus, similique cumque deleniti. Beatae exercitationem labore vero optio ipsam!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio id temporibus reiciendis quo placeat odit dolores modi molestias ut culpa fugiat, nobis, natus blanditiis accusamus facere sit doloremque dignissimos delectus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vitae laborum quia possimus velit cum quae eos, tenetur pariatur nihil, dolorem totam dicta ex aperiam impedit dignissimos officia exercitationem et.
+            </p>
 </body>
 </html>
