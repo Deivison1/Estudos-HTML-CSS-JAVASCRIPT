@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio tabelas</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 10px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Área</th>
+                <th  rowspan="2" >Displinas</th>
+                <th colspan="2">Notas</th>
+                
+                <th>Media</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <th scope="rowgroup" rowspan="4">Exatas</th>
+            <tr>
+                <td>Matemática</td>
+                <td>Fisica</td>
+                <td>Quimica</td>
+                <td>Biologia</td>  
+              </tr>
+        </tbody>
+    </table>
+</body>
+</html>
