@@ -52,20 +52,19 @@
         <div id="res">resultado</div>
     </div>
     <script>
-        function consultar(){
-            var país = document.querySelector('#n1').value
-            país = document.query.querySelector('#n1').value
-            var res  = document.querySelector('#res')
+    function consultar(){
             
-            txt = String(país.value)
+        var entrada = document.querySelector('#n1')
+        país = document.querySelector('#n1').Value
+        var res  = document.querySelector('#res')
+            
+        
+        if( país == 'Brasil'){
 
-            if(país == 'Brasil' || 'brasil'){
-                res.innerHTML = ` Você é <strong> Brasileiro </strong>`
-            }else{
-                re.innerHTML  = ` Você é <strong> Estrangeiro </strong>` 
-            }
+            res.innerHTML = ` Você é <strong>Brasileiro</strong>`
+        }
 
-        }    
+    }    
     </script>
 </body>
 </html>
