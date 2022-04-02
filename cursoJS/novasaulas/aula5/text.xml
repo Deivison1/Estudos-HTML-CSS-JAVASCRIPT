@@ -44,9 +44,10 @@ Precedencia dos operadores↓
  /   *   %
  +  -
 
-Auto Atribuições:                                                                               Forma Simplificada:
+Auto Atribuições:  
+Forma Simplificada:
 
-var  n = 3                                                                                                var n = 3
+var  n = 3                                                                 var n = 3
 
 n = n + 4    // ele vai somar ele mesmo a 4                                  |     n   +=  4 
 n = n - 5    //ele vai pegar ele mesmo e subtrair 5                        |     n   -=  2
@@ -116,7 +117,7 @@ Ultimo: Logicos nessa ordem: ! && ||
  
  ____________________________________
 
-Operadores teminário
+Operadores ternário
 
 [ teste ? true : false ]  
 
