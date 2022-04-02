@@ -128,7 +128,7 @@ Operadores teminário
 
  _______________________________________
 
-MANIPULANDO  DOM POR: MARCA, ID, NAME, CLASS E SELETOR.
+MANIPULANDO DOM POR: MARCA, ID, NAME, CLASS E SELETOR.
 
 EXEMPLOS:  
     <h1>Iniciando com Dom</h1>
@@ -145,3 +145,40 @@ EXEMPLOS:
        d.style.background = 'green'
        d.innerText = 'Estou aguardando'
     </script>
+__________________________________________________________________
+
+CRIANDO EVENTOS NO DOM
+
+var a = document.getElementById('area')
+
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+
+    function clicar(){
+        a.innerText = "Clicou!"
+        a.style.background = 'red'
+    }
+    function entrar(){
+      a.innerText = "Entrou!"
+    }
+    function sair(){
+    a.innerText = 'Saiu!'
+    a.style.background = 'green'
+    }
+
+    __________________________________________________________________
+
+    CONDIÇÕES EM JAVASCRIPT (if, else, else if, swhite case)
+     
+    if ( condição ){
+        true  --> condição simples
+    __________________________________________________________________
+    
+    if ( condição ){
+        true
+    }else{
+        false 
+
+    }
+    
