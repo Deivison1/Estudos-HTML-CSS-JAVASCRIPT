@@ -174,9 +174,9 @@ var a = document.getElementById('area')
     if ( condição ){
         true  --> condição simples
     __________________________________________________________________
-    
+
     if ( condição ){
-        true
+        true --> condição composta
     }else{
         false 
 
