@@ -168,18 +168,95 @@ var a = document.getElementById('area')
     a.style.background = 'green'
     }
 
-    __________________________________________________________________
+    _____________________________________________________________
 
-    CONDIÇÕES EM JAVASCRIPT (if, else, else if, swhite case)
+    CONDIÇÕES EM JAVASCRIPT (if, else, else if, switch case)
      
+     condição simples
     if ( condição ){
-        true  --> condição simples
-    __________________________________________________________________
+        true //Executa a mensagem   
+__________________________________________________________________
 
+Condição composta
     if ( condição ){
-        true --> condição composta
+        
     }else{
-        false 
+        
 
     }
-    
+__________________________________________________________________
+
+Condição Aninhada
+
+EXEMPLOS:
+
+var agora = new Date()
+var hora = agora.getHours()
+console.log(` Agora são exatamente ${hora} horas.`)
+
+if( hora < 12){
+    console.log('Bom dia!')
+
+}else if(hora <= 18){
+    console.log('Boa tarde!')
+
+}else{
+    console.log('Boa noite!')
+}
+
+__________________________________________________________________
+
+var idade = 67
+console.log(`Você tem ${idade} anos`)
+
+if(idade < 16){
+   console.log(' Não vota')
+
+}else if (idade < 18 || idade > 65){
+    console.log('Voto opcional')
+}else{
+    console.log('Voto obrigatório')
+}
+________________________________________________________________
+
+[Switch case: Obrigatório o uso do Break]
+
+var agora = new Date()
+var diaSem = agora.getDay()
+
+/*
+    0 = Domingo
+    1 = Segundo
+    2 = Terça
+    3 = Quarta
+    4 = Quinta
+    5 = Sexta
+    6 = Sábado
+*/ 
+console.log(diaSem)
+
+switch(diaSem){
+    case 0:
+        console.log('Domingo')
+        break
+    case 1:
+        console.log('Segunda')
+        break
+    case 2:
+        console.log('Terça')
+        break
+    case 3:
+        console.log('Quarta')
+        break
+    case 4:
+        console.log('Quinta')
+        break
+    case 5:
+        console.log('Sexta')
+        break
+    case 6:
+        console.log('Sábado')
+        break
+    default:
+        console.log('[ERRO] Dia inválido')
+}
