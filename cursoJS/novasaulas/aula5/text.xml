@@ -260,3 +260,7 @@ switch(diaSem){
     default:
         console.log('[ERRO] Dia inválido')
 }
+__________________________________________________________________
+
+Modulo E Repetições em Javascript
+
