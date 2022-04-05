@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+*{     
+    margin: 0;
+    padding: 0;
+}
+.container-principal{
+     
+    color: #777; 
+    margin-bottom: 130px;
+    font-family: 'Comfortaa', cursive;
+}
+
+header {
+    width: 100%; 
+    height: 100px;	
+    background-color: #004AAD; 
+    position: fixed; top: 0;
+    font-family: 'Comfortaa', cursive;
+}
+.logo img {
+    margin-left: 15%;
+}
+/*definição das prioridades do cabeçallho*/
+nav {
+    position: absolute; 
+    right: 30px; 
+    bottom: 0px;
+}
+nav ul li {
+    display: flex;
+    float: left; 
+    color: #fff; 
+    width: auto; 
+    margin: 0.8em; 
+    font-size: 1.5em; 
+    list-style: none; 
+    font-weight: 100;
+    font-family: 'Comfortaa', cursive;
+}
+nav ul li a {
+    flex-direction: row;
+    text-decoration: none; 
+    color: #bbb;
+}
+nav ul li a:hover {
+    color: #fdc202;
+}
+
+.Interpretes {
+    
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;   
+    padding: 36px;
+    border-radius: 25px;
+    font-family: 'Comfortaa', cursive;
+    background-color: rgb(245, 236, 236);
+    box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 25%);
+}
+.Foto_Valor {
+    
+    display: flex;
+    width: 100%;
+    
+}
+.Profissional{
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.Valor{
+    padding-top: 0px;
+}
+.nome {
+    padding: 3px 3px 3px  ;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    
+}
+.funcao {
+    
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.cidade {
+    
+    width: 100%;
+    padding: 20px;
+    color: #000000;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.texto {
+    width: 98%;
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 2px;
+    font-family: 'Comfortaa', cursive;				
+}
+
+button {
+    display: flex;
+    background-color: #C56B34;
+    border: 1px solid transparent;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 40px;
+    width: 70%;
+    font-size: 13px;
+    font-weight: bold;
+    -moz-transform: all 0.4s;
+    -webkit-transform: all 0.4s;
+    transition: all 0.4s;
+    margin-bottom: 8px;	
+    font-family: 'Comfortaa', cursive;    			
+}
+button > p{
+    padding-right: 7px;
+}
+
+ button:hover {
+    -moz-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(1.1);
+}
+.Telefone{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.Telefone p {
+    
+    color: rgb(38, 243, 38);
+}
+  
