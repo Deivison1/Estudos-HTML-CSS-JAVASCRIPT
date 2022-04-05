@@ -21,22 +21,26 @@ section{
     border-radius: 10px;
     box-shadow: 0.5px 1.5px 1.5px 2.5px  rgba(0, 0, 0, 0.314);
 }
-
 footer{
-   height: 50px;
-   margin-top: 10px;
-   color: white;
-   font-style: italic;
-   text-align: center;
+    
+    height: 60px;
+    width: 500px;
+    display: flex;
+    margin: auto;
+    align-items:center;
+    justify-content: center;
+    margin-top: 10px;
    
 }
-.footer{
-    flex-direction: center;
+footer >  a{
+    color: white;
+    padding-left: 5px;
+    text-decoration: none;
+    
 }
-.reposi{
-   
-  height:50px;
-  width: 40px;
-  background-position: center;
-  
-}
+
+
+
+
+
+
