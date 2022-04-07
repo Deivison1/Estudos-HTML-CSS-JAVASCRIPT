@@ -1,6 +1,7 @@
 body{
   background: rgb(90, 175, 240,);
-  font: normal 15px Arial;
+  font-size: 15px;
+  font-family: 'Comfortaa', cursive;
 }
 
 header{
@@ -19,7 +20,8 @@ section{
     padding: 15px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0.5px 1.5px 1.5px 2.5px  rgba(0, 0, 0, 0.314);
+    box-shadow: 0.5px 1.5px 1.5px 2.5px  
+    rgba(0, 0, 0, 0.314);
 }
 footer{
     
