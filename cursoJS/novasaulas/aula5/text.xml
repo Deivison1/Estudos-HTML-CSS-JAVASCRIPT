@@ -262,5 +262,27 @@ switch(diaSem){
 }
 __________________________________________________________________
 
-Modulo E Repetições em Javascript
+Modulo (E) 
+
+Repetições em Javascript
+
+Estrutura de repetição com while = teste lógico no inicio: essa condição diz, enquanto(while) c for menor que 6 ele irá mostrar a mensagem:  passo = passo 1, passo 2..até passo 6
+
+
+while( c <= 6) // teste logico no inicio: essa condição diz, enquanto(while) c for menor ou igual a 6 ele irá mostrar a mensagem:  passo = passo 1, passo 2..até passo 6
+
+var c = 1 
+while( c <= 6){
+
+    console.log(`passo ${c}`)
+    c++ // c = c + 1
+}
+
+Estrutura de repetição com do while: //primeiro ele executa o bloco depois depois verifica se a condição é verdeira e assim continua até encerrar essa condição
+
+var c = 1 
+do{ 
+    console.log(`passo ${c}`)
+    c++
+}while(c <= 6) // Teste lógico no final
 
