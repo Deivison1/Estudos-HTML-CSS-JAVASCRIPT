@@ -286,3 +286,47 @@ do{
     c++
 }while(c <= 6) // Teste lógico no final
 
+________________________________________________________________
+
+VARIÁVEIS COMPOSTAS: É uma variavel que contém varios elementos, cada elemento é composto por seu valor e por uma chave de indentificação ( indice[0] )
+
+Exemplos: let num = [5, 8, 4]
+
+Acrescentando valores a um vetor:
+
+let num = [5, 8, 4]
+
+num.[3] = 6 ( comando usado para adicionar apartir do indice, no caso[3] esse vetor não possui indice[3] mas o Javascript entende e inclui para o programador )
+
+ou
+
+num.push(7) = ( comando "metodo" usado para adicionar apartir do ultimo elemento )
+
+num.length ( comando "atributo" usadado para descobrir o tamnho do vetor )
+
+
+resultado: num = [5, 8, 4, 6, 7]
+    
+Usando o metodo .sort() ele ordena o vetor de forma crescente
+
+num.sort() = [4, 5, 6, 7, 8]
+
+.indexOf() é utilizado para verificar a posição n valor indicado
+
+Exemplos:
+    
+let num = [4, 5, 6, 7, 8]
+    num.indexOf(5) o indice desse valor é [1]
+
+Usando estrutura de repetição e condição para mostrar o vetor:
+
+let valores = [5,6 ,7 ,7 ,8 ,9 ,10, 13]
+
+for(let pos = 0; pos <= valores.length; pos++)
+console.log(`A posição do vetor é ${pos} tem o valor ${valores[pos]}`)
+
+ou
+
+for(let pos in valores)
+console.log(`A posição é ${pos} tem o valor ${valores[pos]}`)
+valores.sort()
