@@ -330,3 +330,73 @@ ou
 for(let pos in valores)
 console.log(`A posição é ${pos} tem o valor ${valores[pos]}`)
 valores.sort()
+
+________________________________________________________________________________
+
+Funções em JS:
+
+"São ações executadas assim que são chamadas ou em decorrência de algum evento."
+
+"Uma função pode receber parâmetros e retornar um resultado"
+
+Exemplo prático:
+
+Contém: Chamada, parâmetro, ação, retorno.
+
+function parimpar(n){
+    if (n%2 == 0){
+        return 'par'
+    }else{
+        return 'impar'
+    }
+}
+console.log(parimpar(223))
+
+________________________________________________________________________________
+
+function soma(n1=0, n2=0){
+    return n1 + n2
+}
+console.log(soma(15, 7))
+
+________________________________________________________________________________
+
+let v = function(x){
+    return x*2
+}
+console.log(v(5))
+
+________________________________________________________________________________
+
+function fatorial(n){
+    let fat = 1
+    for( let c = n; c > 1; c--){
+        fat *= c
+    }
+    return fat
+}
+console.log(fatorial(5))
+
+// 5! 5 x 4 x 3 x 2 x 1 
+
+________________________________________________________________________________
+
+//Fatorial recusirvo
+
+function fatorial(n){
+    if(n == 1){
+        return 1
+    }else{
+        return n * fatorial(n-1) 
+    }
+}
+console.log(fatorial(10))
+
+/*
+  5! = 5 X 4 X 3 X 2 X 1
+  5! = 5! X 4!
+
+  n! = n x (n-1)!
+  1! = 1
+
+ */
