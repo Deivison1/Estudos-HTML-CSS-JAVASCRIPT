@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600&display=swap');
+
 body{
   background-color: rgb(175, 132, 248);
   font-size: 15px;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 header{
