@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    font-family: 'Space Grotesk', sans-serif;
 }
 ul{
     list-style: none;
@@ -10,14 +15,17 @@ a{
     text-decoration: none;
 }
 .header{
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: aqua;
+
 }
 span{
     margin: 0 50px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .menu{
     margin: 0 50px;
@@ -46,23 +54,49 @@ span{
 main{
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 3rem;
     
 }
 section{
-    width: 400px;
+    width: 80%;
     padding: 6px;
-    margin: 3px;
+    margin: 5px;
+    margin-bottom: 2rem;
     border-radius: 6px;
     background-color: rgb(238, 235, 235);
 }
 p{
     margin-bottom: 15px;
 }
-article{
-    width: 400px;
-    padding: 6px;
-    border-radius: 6px;
-    background-color: rgb(238, 235, 235);
+.container-form{
+    width: 60%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 4px 5px rgba(131, 131, 229, 0.885);
+    
+}
+.contato-form{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px solid black;
+}
+input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 701px) {
+.header,
+.nav-lista{
+    display: flex;
+    flex-direction: column;
+    }
 }
