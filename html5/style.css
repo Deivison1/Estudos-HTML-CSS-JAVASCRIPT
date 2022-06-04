@@ -111,8 +111,9 @@ a:hover{
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    text-align: center;
     align-items: center;
+    justify-content: center;
     z-index: 2;
     opacity: 0;
     visibility: hidden;
@@ -131,6 +132,9 @@ a:hover{
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 1.5rem;
+}
+.menu-items li{
+    margin-bottom: 10px;
 }
 #toggle:checked + .checkbox .trace:nth-child(1) {
     transform: rotate(45deg);
@@ -220,7 +224,7 @@ input{
         width: 25px;
         height: 1px;
     }
-     .checkbox .trace:nth-child(2){
-        top: 36;
+    .menu-items ul li a{
+        font-size: 00.75rem;
     }
 }
