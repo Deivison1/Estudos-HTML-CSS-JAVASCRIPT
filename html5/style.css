@@ -5,50 +5,159 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    font-family: 'Space Grotesk', sans-serif;
+body{
+    font-family: 'Poppins', sans-serif;
 }
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-.header{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header-container{
+    height: 30vh;
+    width: 100vw;
     background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 40px;
+    position: relative;
 
 }
-span{
-    margin: 0 50px;
+h1{
     font-size: 1.5rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
-.menu{
-    margin: 0 50px;
+h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.social-media{
+    
+    margin-top: 1rem;
+    display: flex;
+}
+.social-media a{
+    text-decoration: none;
+    border-radius: 0.25rem;
+    color: #1E1E2A;
+    padding: 0.25rem 1rem;
+    border:  1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    transition: .5s ease-in-out;
+    margin-right: 5px;
 }
-.nav-lista{
-    display: flex;
-}
-.lista{
-    margin: 5px;
-    padding: 5px;
-    border-radius: 0.35rem;
+
+a:hover{
     background-color: white;
 }
-.lista:hover{
-    transition: 0.4s ease;
-    background-color: rgba(255, 255, 255, 0.847); 
+.checkbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.nav-link{
-    color: black;
+.checkbox{
+    height: 100px;
+    width: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+.checkbox .trace{
+    width: 35px;
+    height: 2px;
+    background-color: #1E1E2A;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+.checkbox .trace:nth-child(1){
+    top: 30px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(2){
+    top: 40px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(3){
+    top: 50px;
+    transform: rotate(0);
+}
+#toggle{
+    display: none;
+}
+.menu{
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background-color: transparent;
+    height: 4px;
+    width: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px #ffff;
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+.menu-items{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-items ul{
+    list-style-type: none;
+}
+
+.menu-items ul li a {
+    margin: 10px 0;
+    margin-bottom: 5px;
+    color: #1E1E2A;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+}
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    top: 47px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2){
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+
+}
+#toggle:checked + .checkbox .trace:nth-child(3){
+   transform: rotate(-45deg); 
+   top: 48px;
+}
+
+#toggle:checked + .checkbox{
+    background-color: #ffff;
+}
+#toggle:checked ~ .menu{
+    box-shadow: 0px 0px 0px 100vmax #ffff;
+    z-index: 1;
+}
+#toggle:checked ~ .menu-items{
+    visibility: visible;
+    opacity: 1;
 }
 
 main{
@@ -92,11 +201,26 @@ input{
     width: 100%;
     margin-bottom: 5px;
 }
-
-@media screen and (max-width: 701px) {
-.header,
-.nav-lista{
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 460px){
+    .header-container{
+        padding: 0 30px;
+    }
+    .header-container > h1, h2{
+        font-size: 0.75rem;
+    }
+    .social-media a{
+        font-size: 0.75rem;
+        padding: 0.25rem .25rem; 
+    }
+    .checkbox{
+        top: 10px;
+        width: 50px;
+    }
+    .checkbox > .trace{
+        width: 25px;
+        height: 1px;
+    }
+     .checkbox .trace:nth-child(2){
+        top: 36;
     }
 }
