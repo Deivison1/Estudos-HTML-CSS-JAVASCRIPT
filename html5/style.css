@@ -9,44 +9,44 @@ html{
     overflow-x: hidden;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Popins', sans-serif;
 }
 .header-container{
-    height: 22vh;
+    position: relative;
+    height: 18vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     box-sizing: border-box;
+    box-shadow: 1px 1px 1px rgb(26 26 29 / 7%);
     padding: 0 40px;
-    position: relative;
+    
+    
 }
 .titulo{
+    position: relative;
+    top: 15px;
+    display: flex;
+    justify-content: center;
     padding: 5px;
-    border-radius: 0.25rem;
-    box-shadow: 1px 1px 1.5px 1px  rgba(131, 131, 229, 0.885); 
+    border-radius: 0.15rem;
+    box-shadow: 2px 1px 1.5px 1px  rgba(131, 131, 229, 0.885); 
 }
 h1{
-    margin-top: 2px;
     font-size: 1.5rem;
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-h2{
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
 .social-media{
-    
+    position: relative;
+    top: 10px;
     margin-top: 1rem;
     display: flex;
 }
 .social-media a{
     text-decoration: none;
-    border-radius: 0.25rem;
+    border-radius: 0.15rem;
     color: #1E1E2A;
     padding: 0.25rem 1rem;
     display: flex;
@@ -54,12 +54,42 @@ h2{
     justify-content: center;
     transition: .5s ease-in-out;
     margin-right: 5px;
-    box-shadow: 1.5px 1.5px  rgba(131, 131, 229, 0.885);
+    box-shadow: 1px 1px 1.5px 1px   rgba(131, 131, 229, 0.885);
 }
 
 .social-media > a:hover{
     background-color: rgb(232, 231, 231);
 }
+.checkbox-container{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+#toggle{
+    display: none;
+}
+.menu-items{
+    margin-right: 50px;
+}
+.menu-items ul{
+    list-style-type: none;
+    display: flex;
+}
+li{
+    font-size: 0.95rem;
+    margin: 10px;
+}
+li a{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+    
 .checkbox-container{
     display: flex;
     justify-content: center;
@@ -96,9 +126,6 @@ h2{
     top: 35px;
     transform: rotate(0);
 }
-#toggle{
-    display: none;
-}
 .menu{
     position: absolute;
     top: 28px;
@@ -126,11 +153,6 @@ h2{
     visibility: hidden;
     transition: 400ms ease-in-out 0s;
 }
-
-.menu-items ul{
-    list-style-type: none;
-}
-
 .menu-items ul li a {
     margin: 10px 0;
     margin-bottom: 5px;
@@ -176,21 +198,22 @@ li:hover{
 #toggle:checked ~ .menu-items{
     visibility: visible;
     opacity: 1;
+    }
 }
-
 main{
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 3rem;
     margin-bottom: 3rem;
+    background-color: #f5f5f5;
     
 }
 section{
     width: 80%;
     padding: 6px;
     margin: 5px;
+    margin-top: 3rem;
     margin-bottom: 2rem;
     border-radius: 6px;
     box-shadow:  1px 1px 1.5px 1px rgba(131, 131, 229, 0.885);
@@ -242,7 +265,7 @@ footer{
     .titulo{
         padding: 2px;
     }
-    .titulo > h1, h2{
+    .titulo > h1{
         font-size: 0.75rem;
     }
     .social-media a{
