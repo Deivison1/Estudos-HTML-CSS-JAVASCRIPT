@@ -5,11 +5,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    overflow-x: hidden;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
 .header-container{
-    height: 30vh;
+    height: 22vh;
     width: 100vw;
     background-color: aqua;
     display: flex;
@@ -22,6 +25,7 @@ body{
 
 }
 h1{
+    margin-top: 2px;
     font-size: 1.5rem;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -78,15 +82,15 @@ a:hover{
     transition: 0.5s ease-in-out;
 }
 .checkbox .trace:nth-child(1){
-    top: 30px;
+    top: 15px;
     transform: rotate(0);
 }
 .checkbox .trace:nth-child(2){
-    top: 40px;
+    top: 25px;
     transform: rotate(0);
 }
 .checkbox .trace:nth-child(3){
-    top: 50px;
+    top: 35px;
     transform: rotate(0);
 }
 #toggle{
@@ -170,6 +174,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 3rem;
+    margin-bottom: 3rem;
     
 }
 section{
@@ -178,7 +183,7 @@ section{
     margin: 5px;
     margin-bottom: 2rem;
     border-radius: 6px;
-    background-color: rgb(238, 235, 235);
+    box-shadow: 1px 3px 3px rgba(131, 131, 229, 0.885);
 }
 p{
     margin-bottom: 15px;
@@ -191,7 +196,7 @@ p{
     flex-direction: column;
     justify-content: center;
     border-radius: 5px;
-    box-shadow: 1px 4px 5px rgba(131, 131, 229, 0.885);
+    box-shadow: 1px 3px 3px rgba(131, 131, 229, 0.885);
     
 }
 .contato-form{
@@ -199,14 +204,29 @@ p{
     padding: 5px;
     display: flex;
     flex-direction: column;
-    border-radius: 1px solid black;
 }
 input{
     width: 100%;
     margin-bottom: 5px;
 }
-@media screen and (max-width: 460px){
+
+footer{
+    height: 4rem;
+    width: 100vw;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+@media screen and (max-width: 767px){
     .header-container{
+        height: 19vh;
         padding: 0 30px;
     }
     .header-container > h1, h2{
@@ -217,8 +237,7 @@ input{
         padding: 0.25rem .25rem; 
     }
     .checkbox{
-        top: 10px;
-        width: 50px;
+         width: 50px;
     }
     .checkbox > .trace{
         width: 25px;
@@ -226,5 +245,14 @@ input{
     }
     .menu-items ul li a{
         font-size: 00.75rem;
+    }
+    .section{
+        margin: auto;
+    }
+    .bx{
+        font-size: 10px;
+    }
+    .copyright{
+        font-size: 0.50rem;
     }
 }
