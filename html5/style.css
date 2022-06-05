@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 *{
     margin: 0;
@@ -26,17 +26,15 @@ body{
 .titulo{
     position: relative;
     top: 15px;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
+    text-align: center;
+    padding: 6px;
     border-radius: 0.15rem;
     box-shadow: 2px 1px 1.5px 1px  rgba(131, 131, 229, 0.885); 
 }
 h1{
     font-size: 1.5rem;
     margin-bottom: 5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .social-media{
     position: relative;
@@ -62,7 +60,7 @@ h1{
 }
 .checkbox-container{
     position: absolute;
-    top: 20px;
+    top: 65px;
     right: 0;
 }
 #toggle{
@@ -76,13 +74,27 @@ h1{
     display: flex;
 }
 li{
-    font-size: 0.95rem;
-    margin: 10px;
+    margin: 5px;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+    transition: .4s ease-in-out;
+    box-shadow: 1px 2px 2px rgba(131, 131, 229, 0.885);
 }
 li a{
     text-decoration: none;
 }
-
+.nav-link:hover{
+    background-color: rgb(232, 231, 231);
+}
+.contato{
+    background-color: rgba(131, 131, 229, 0.885);
+}
+.contato:hover{
+    background-color: rgba(131, 131, 229, 0.72);
+}
+.link-contato{
+    color: white;
+}
 main{
     width: 100vw;
     display: flex;
@@ -143,6 +155,7 @@ footer{
 @media screen and (max-width: 767px) {
     
 .checkbox-container{
+    top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,6 +217,11 @@ footer{
     visibility: hidden;
     transition: 400ms ease-in-out 0s;
 }
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .menu-items ul li a {
     margin: 10px 0;
     margin-bottom: 5px;
@@ -213,11 +231,7 @@ footer{
     letter-spacing: 4px;
     font-size: 1.5rem;
 }
-.menu-item ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 li{
     margin-bottom: 10px;
     padding: 0.25rem 1rem;
@@ -230,7 +244,7 @@ li:hover{
 }
 #toggle:checked + .checkbox .trace:nth-child(1) {
     transform: rotate(45deg);
-    top: 47px;
+    top: 8px;
 }
 #toggle:checked + .checkbox .trace:nth-child(2){
     transform: translate(-100px);
@@ -241,7 +255,7 @@ li:hover{
 }
 #toggle:checked + .checkbox .trace:nth-child(3){
     transform: rotate(-45deg); 
-    top: 48px;
+    top: 9px;
 }
 #toggle:checked + .checkbox{
     background-color: #ffff;
