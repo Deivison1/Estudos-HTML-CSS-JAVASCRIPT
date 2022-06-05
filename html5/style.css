@@ -14,7 +14,6 @@ body{
 .header-container{
     height: 22vh;
     width: 100vw;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +21,11 @@ body{
     box-sizing: border-box;
     padding: 0 40px;
     position: relative;
-
+}
+.titulo{
+    padding: 5px;
+    border-radius: 0.25rem;
+    box-shadow: 1px 1px 1.5px 1px  rgba(131, 131, 229, 0.885); 
 }
 h1{
     margin-top: 2px;
@@ -46,16 +49,16 @@ h2{
     border-radius: 0.25rem;
     color: #1E1E2A;
     padding: 0.25rem 1rem;
-    border:  1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: .5s ease-in-out;
     margin-right: 5px;
+    box-shadow: 1.5px 1.5px  rgba(131, 131, 229, 0.885);
 }
 
-a:hover{
-    background-color: white;
+.social-media > a:hover{
+    background-color: rgb(232, 231, 231);
 }
 .checkbox-container{
     display: flex;
@@ -76,7 +79,7 @@ a:hover{
 .checkbox .trace{
     width: 35px;
     height: 2px;
-    background-color: #1E1E2A;
+    background-color: rgba(131, 131, 229, 0.885);
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -137,8 +140,15 @@ a:hover{
     letter-spacing: 4px;
     font-size: 1.5rem;
 }
-.menu-items li{
-    margin-bottom: 10px;
+li{
+   margin-bottom: 10px;
+   padding: 0.25rem 1rem;
+   border-radius: 0.25rem;
+   transition: .4s ease-in-out;
+   box-shadow: 1px 2px 2px rgba(131, 131, 229, 0.885);
+}
+li:hover{
+    background-color: rgb(232, 231, 231);
 }
 #toggle:checked + .checkbox .trace:nth-child(1) {
     transform: rotate(45deg);
@@ -183,7 +193,7 @@ section{
     margin: 5px;
     margin-bottom: 2rem;
     border-radius: 6px;
-    box-shadow: 1px 3px 3px rgba(131, 131, 229, 0.885);
+    box-shadow:  1px 1px 1.5px 1px rgba(131, 131, 229, 0.885);
 }
 p{
     margin-bottom: 15px;
@@ -196,7 +206,7 @@ p{
     flex-direction: column;
     justify-content: center;
     border-radius: 5px;
-    box-shadow: 1px 3px 3px rgba(131, 131, 229, 0.885);
+    box-shadow: 1px 1px 1.5px 1px rgba(131, 131, 229, 0.885);
     
 }
 .contato-form{
@@ -213,7 +223,7 @@ input{
 footer{
     height: 4rem;
     width: 100vw;
-    background-color: aqua;
+    background-color: rgba(131, 131, 229, 0.885);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,7 +239,10 @@ footer{
         height: 19vh;
         padding: 0 30px;
     }
-    .header-container > h1, h2{
+    .titulo{
+        padding: 2px;
+    }
+    .titulo > h1, h2{
         font-size: 0.75rem;
     }
     .social-media a{
