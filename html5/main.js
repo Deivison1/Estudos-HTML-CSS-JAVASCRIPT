@@ -2,30 +2,33 @@ const intems = [
     {
         id:0,
         nome: 'Luvas',
-        img: '',
+        img: 'Luvas.png',
         quantidade: 0
     },
     {
         id:1,
         nome: 'Shorts',
-        img: '',
+        img: 'Shorts.png',
         quantidade: 0
     },
     {
         id: 2,
         nome: 'Sapato',
-        img: '',
+        img: 'Sapato.png',
         quantidade: 0
     },
 ]
- inicilizarLOja = () => {
-     var containerProduto = document.getElementById('produtos');
-     intems.map((val) =>{
-        containerProduto.innerHTML += `
-        
-        <div class="produtos-single">
-        < img = src="`+val.img+`" /> 
-        </div>`
+incinializarLoja = () => {
+    var containerProdutos = document.getElementById('pordutos');
+    intems.map((val)=>{
+        containerProdutos.innerHTML+= `
+        <div class="produto-single">
+            <img src="`+val.img+`"<img/>
+            <p>`+val.nome+`</p>
+            <a key="`+val.id+`" href="">Adicioanr ao carinho!</a>
+        </div>
+
+        `;
     })
 }
-inicilizarLOja();
+incinializarLoja();
