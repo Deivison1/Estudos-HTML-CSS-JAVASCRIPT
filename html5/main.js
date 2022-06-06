@@ -25,7 +25,7 @@ incinializarLoja = () => {
         <div class="produto-single">
             <p>`+val.nome+`</p>
             <img src="`+val.img+`"<img/>
-            <a key="`+val.id+`" href="#">Adicioanr ao carinho!</a>
+            <a class="link-carrinho" key="`+val.id+`" href="#">Adicionar ao carrinho!</a>
         </div>
 
         `;
@@ -33,17 +33,17 @@ incinializarLoja = () => {
 }
 incinializarLoja();
 
-atualizarCarinho = () => {
+atualizarCarrinho = () => {
     console.log(intems);
 }
 
-var links = document.getElementsByTagName('a');
+var links = document.getElementsByTagName('link-carrinho');
 
 for( var i = 0;  i < links.length; i++){
     links[i].addEventListener('click', function(){
         let key = this.getAttribute('key');
         intems[key].quantidade++;
-        atualizarCarinho();
+        atualizarCarrinho();
         return false;
     })
 

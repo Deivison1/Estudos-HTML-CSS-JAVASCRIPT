@@ -106,12 +106,15 @@ main{
     
 }
 #produtos,
-#carinho{
+#carrinho{
     display: flex;
     margin-top: 20px;
+    width: 100%;
     
 }
-
+.link-carrinho{
+    margin-top: 5px;
+}
 .produto-single{
     width: 33.3%;
     padding: 0 20px;
