@@ -2,19 +2,19 @@ const intems = [
     {
         id:0,
         nome: 'Luvas',
-        img: 'img\Luvas.png',
+        img: 'Luvas.png',
         quantidade: 0
     },
     {
         id:1,
         nome: 'Shorts',
-        img: 'img\Shorts.png',
+        img: 'Shorts.png',
         quantidade: 0
     },
     {
         id: 2,
         nome: 'Sapato',
-        img: 'img\Sapato.png',
+        img: 'Sapato.png',
         quantidade: 0
     },
 ]

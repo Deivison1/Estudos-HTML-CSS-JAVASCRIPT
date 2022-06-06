@@ -13,7 +13,7 @@ body{
 }
 .header-container{
     position: relative;
-    height: 18vh;
+    height: 20vh;
     width: 100vw;
     display: flex;
     align-items: flex-start;
@@ -107,9 +107,11 @@ main{
 }
 #produtos,
 #carinho{
-    border: 1xp solid black;
+    display: flex;
+    margin-top: 20px;
     
 }
+
 .produto-single{
     width: 33.3%;
     padding: 0 20px;
