@@ -107,12 +107,13 @@ h2{
 .produto-single img{
     width: 80%;
 }
-.produto-single > p, a, img{
+.produto-single > p, img{
     margin: 8px;
 }
 .link-carrinho{
     color: black;
     padding: 5px;
+    margin: 8px;
     border-radius: .25rem;
     text-decoration:  none;
     background-color: rgb(193, 252, 103);
@@ -166,14 +167,20 @@ input{
     margin-top: 4rem;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
     background-color: rgba(131, 131, 229, 0.885);
+}
+.footer-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .logo{
     
     height: 40px;
-    width: 400px;
+    width: 50%;
     padding: 0 1rem;
     display: flex;
     align-items: center;
@@ -183,36 +190,37 @@ input{
     background-color: white;
 }
 .descricao{
-    width: 400px;
+    width: 50%;
     color: white;
-    margin-top: 1rem;
+    margin-top: 0.25rem;
+    font-size: clamp(.813rem,.7rem + .55vw,1.125rem);
+    line-height: 1.5;
 }
 .social-media{
     display: flex;
+    width: 50%;
+    margin-top: 2px;
+    margin-bottom: 10px;
 }
 .social-media a{
     text-decoration: none;
     color: #1E1E2A;
     display: flex;
-    align-items: center;
-    justify-content: center;
     transition: .5s ease-in-out;
 }
 .icon-social{
+    margin-left: 0;
     font-size: 25px;
 }
 .icon-social:hover{
     color: white;
     transition: .4s ease-in-out
 }
+.bxl-github{
+    color: #1E1E2A;
+}
 .bxl-linkedin-square{
     color: #0e76a8;
-}
-.copyright{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
 }
 @media screen and (max-width: 767px) {
 .header-container{
@@ -343,14 +351,13 @@ li:hover{
 }
 @media screen and (max-width: 590px){
     .titulo{
-        padding: 2px;
+        padding:2px 5px;
     }
     .titulo > h1{
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
-    .social-media a{
-        font-size: 0.75rem;
-        padding: 0.25rem .25rem; 
+    .social-media i{
+        font-size: 15px;
     }
     .checkbox{
         width: 50px;
@@ -365,10 +372,7 @@ li:hover{
     .produto-single a{
         font-size: .75rem;
     }
-    .bx{
-        font-size: 10px;
-    }
-    .copyright{
-        font-size: 0.50rem;
+    .logo{
+        font-size: 0.85rem;
     }
 }
