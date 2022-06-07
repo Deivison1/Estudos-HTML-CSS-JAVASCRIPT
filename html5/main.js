@@ -1,26 +1,26 @@
-const intems = [
+const items = [
     {
         id:0,
-        nome: 'Camiseta 1',
+        nome: 'Camiseta modelo 1',
         img: 'Camiseta.png',
         quantidade: 0
     },
     {
         id:1,
-        nome: 'Camiseta 2',
+        nome: 'Camiseta modelo 2',
         img: 'Camiseta.png',
         quantidade: 0
     },
     {
         id: 2,
-        nome: 'Camiseta 3',
+        nome: 'Camiseta modelo 3',
         img: 'Camiseta.png',
         quantidade: 0
     },
 ]
 incinializarLoja = () => {
     var containerProdutos = document.getElementById('produtos');
-    intems.map((val)=>{
+    items.map((val)=>{
         containerProdutos.innerHTML += `
         <div class="produto-single">
             <img src="`+val.img+`"<img/>
@@ -38,21 +38,23 @@ atualizarCarrinho = () => {
 
     containerCarrinho.innerHTML = "";
 
-    intems.map((val)=>{
+    items.map((val)=>{
         if(val.quantidade > 0){
         containerCarrinho.innerHTML += `
-        <p>`+val.nome+` | quantidade: `+val.quantidade+`</p>
-        <hr>
-
-        `;
-        }
+        <div class="info-carrinho">
+            <p style="float:left;">Produto: `+val.nome+`</p>
+            <p style="float: right;">Quantidade: `+val.quantidade+`</p>
+            <div style="clear:both"></div>
+        </div>
+        `
+        };
     })
 }
 var links = document.getElementsByTagName('a');
     for(var i = 0; i < links.length; i++){
         links[i].addEventListener('click', function(){
             let key = this.getAttribute('key');
-            intems[key].quantidade++;
+            items[key].quantidade++;
             atualizarCarrinho();
             return false;
         })  

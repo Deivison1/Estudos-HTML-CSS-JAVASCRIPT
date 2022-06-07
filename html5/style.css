@@ -13,21 +13,18 @@ body{
 }
 .header-container{
     position: relative;
-    height: 20vh;
+    height: 12vh;
     width: 100vw;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     box-sizing: border-box;
     box-shadow: 1px 1px 1px rgb(26 26 29 / 7%);
     padding: 0 40px;
-    
-    
 }
 .titulo{
-    position: relative;
-    top: 15px;
+    
     text-align: center;
-    padding: 6px;
+    padding: 2px;
     border-radius: 0.15rem;
     box-shadow: 2px 1px 1.5px 1px  rgba(131, 131, 229, 0.885); 
 }
@@ -35,40 +32,16 @@ h1{
     font-size: 1.5rem;
     margin-bottom: 5px;
     letter-spacing: 1px;
-    
-}
-.social-media{
-    position: relative;
-    top: 10px;
-    margin-top: 1rem;
-    display: flex;
-}
-.social-media a{
-    text-decoration: none;
-    border-radius: 0.15rem;
-    color: #1E1E2A;
-    padding: 0.25rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s ease-in-out;
-    margin-right: 5px;
-    box-shadow: 1px 1px 1.5px 1px   rgba(131, 131, 229, 0.885);
-}
-
-.social-media > a:hover{
-    background-color: rgb(232, 231, 231);
 }
 .checkbox-container{
     position: absolute;
-    top: 65px;
     right: 0;
 }
 #toggle{
     display: none;
 }
 .menu-items{
-    margin-right: 50px;
+    margin-right: 40px;
 }
 .menu-items ul{
     list-style-type: none;
@@ -76,7 +49,7 @@ h1{
 }
 li{
     margin: 5px;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
     transition: .4s ease-in-out;
     box-shadow: 1px 2px 2px rgba(131, 131, 229, 0.885);
@@ -97,11 +70,7 @@ li a{
     color: white;
 }
 main{
-    height: auto;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+    
     background-color: #f5f5f5;
     
 }
@@ -114,21 +83,26 @@ h2{
     background-color: rgba(131, 131, 229, 0.885);
 }
 #produtos{
-    max-width: 900px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0 2%;
-    
+    align-items: center;
+    justify-content: center;
 }
 .produto-single{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 1rem;
+    margin-right: 10px;
     border-radius: .35rem;
-    box-shadow: 1px 2px 2px rgba(131, 131, 229, 0.885);
+    background-color: white;
+    transition: .3s ease-in-out;
+    
 
+}
+.produto-single:hover{
+    box-shadow: 1px 2px 2px rgba(131, 131, 229, 0.885);
 }
 .produto-single img{
     width: 80%;
@@ -147,8 +121,11 @@ h2{
 .link-carrinho:hover{
     background-color: rgba(170, 241, 63, 0.976);
 }
+.info-carrinho{
+    margin-top: 1rem;
+    border-bottom: 2px dotted;
+}
 #carrinho{
-    
     padding: 0 2%;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -158,9 +135,10 @@ h2{
    margin: 10px;
 }
 
-/*.container-form{
+.container-form{
     width: 60%;
     padding: 5px;
+    margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
@@ -180,16 +158,55 @@ h2{
 input{
     width: 100%;
     margin-bottom: 5px;
-}*/
+}
 
-footer{
-    height: 4rem;
+.footer-container{
+    
     width: 100vw;
     margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     background-color: rgba(131, 131, 229, 0.885);
+}
+.logo{
+    
+    height: 40px;
+    width: 400px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 0.15rem;
+    box-shadow: 2px 1px 1.5px 1px black;
+    background-color: white;
+}
+.descricao{
+    width: 400px;
+    color: white;
+    margin-top: 1rem;
+}
+.social-media{
+    display: flex;
+}
+.social-media a{
+    text-decoration: none;
+    color: #1E1E2A;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s ease-in-out;
+}
+.icon-social{
+    font-size: 25px;
+}
+.icon-social:hover{
+    color: white;
+    transition: .4s ease-in-out
+}
+.bxl-linkedin-square{
+    color: #0e76a8;
 }
 .copyright{
     display: flex;
@@ -198,9 +215,13 @@ footer{
     justify-content: center;
 }
 @media screen and (max-width: 767px) {
+.header-container{
+    height: 10vh;
+    padding: 0 30px;
+}
     
 .checkbox-container{
-    top: 20px;
+    top: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,14 +336,12 @@ li:hover{
     }
     .produto-single{
         width: 100%;
+        row-gap: .5rem;
         margin-right: 0;
     }
+    
 }
 @media screen and (max-width: 590px){
-    .header-container{
-        height: 19vh;
-        padding: 0 30px;
-    }
     .titulo{
         padding: 2px;
     }
@@ -343,8 +362,8 @@ li:hover{
     .menu-items ul li a{
         font-size: 00.75rem;
     }
-    .section{
-        margin: auto;
+    .produto-single a{
+        font-size: .75rem;
     }
     .bx{
         font-size: 10px;
