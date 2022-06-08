@@ -60,18 +60,14 @@
                 Qualquer duvida ou sugestão, esta é área de contato!
             </p>
             <div class="contato-form">
-                <form id="form">
-                    <label>Nome</label>
+                <form action="https://formsubmit.co/contatodeivisonoficial@gmail.com" method="POST">
                     
-                    <input type="text">
-                    <label>Email</label>
-
-                    <input type="email" placeholder="email para contato">
-                    
-                    <label>Duvidas</label>
-                    <textarea name="descricao" id="descricao" style="width: 100%"></textarea>
-        
-                </form>
+                    <input type="text" name="name" required>
+                    <input type="email" name="email" required>
+                    <textarea name="message" placeholder="Escreva aqui!" required></textarea>
+                    <input type="hidden" name="_next" value="http:http://127.0.0.1:5500/obrigado.html">
+                    <button type="submit">Send</button>
+               </form>
             </div>
         </div>
 
