@@ -55,21 +55,26 @@
                 <div id="carrinho"></div>
         </main>
 
-        <div class="container-form">
+        <section class="container-form">
             <p>
                 Qualquer duvida ou sugestão, esta é área de contato!
             </p>
             <div class="contato-form">
                 <form action="https://formsubmit.co/contatodeivisonoficial@gmail.com" method="POST">
-                    
+
+                    <label for="name" id="name">Nome</label>
                     <input type="text" name="name" required>
+            
+                    <label for="email" id="email">Email</label>
                     <input type="email" name="email" required>
+
+                    <label for="message" id="message">Contato</label>
                     <textarea name="message" placeholder="Escreva aqui!" required></textarea>
-                    <input type="hidden" name="_next" value="http:http://127.0.0.1:5500/obrigado.html">
-                    <button type="submit">Send</button>
-               </form>
+                    <input type="hidden" name="_next" value="https://deivison1.github.io/Estudos-HTML-CSS-JAVASCRIPT/html5/obrigado">
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-        </div>
+        </section>
 
     <footer class="footer-container">
         <section class="footer-section" id="contato">
