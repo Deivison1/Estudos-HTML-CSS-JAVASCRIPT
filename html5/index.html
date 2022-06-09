@@ -25,7 +25,7 @@
                     <nav class="menu-items">
                         <ul>
                             <li class="nav-link">
-                                <a href="#">Home</a>
+                                <a href="#home">Home</a>
                             </li>
                             <li class="nav-link">
                                 <a href="#contato">Sobre</a>
@@ -34,28 +34,28 @@
                                 <a href="#">Projetos</a>
                             </li>  
                             <li class="contato">
-                                <a class="link-contato" href="#info-contato">contato</a>
+                                <a class="link-contato" href="#contato">contato</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
-            <div class="titulo">
+            <div class="titulo" id="home">
                 <h1>Deivison Santos</h1>
             </div>
         </div>
     </header>
         <main>
-            <h2>Vitrine</h2>
+            <h2 class="titulo-vitrine">Vitrine</h2>
                 <div id="produtos">
 
                 </div>
             
-            <h2>Carinho</h2>
+            <h2 class="titulo-carinho">Carinho</h2>
                 <div id="carrinho"></div>
         </main>
 
-        <section class="container-form">
+        <section class="container-form" id="contato">
             <p>
                 Qualquer duvida ou sugestão, esta é área de contato!
             </p>
@@ -68,7 +68,7 @@
                     <label for="email" id="email">Email</label>
                     <input type="email" name="email" required>
 
-                    <label for="message" id="message">Contato</label>
+                    <label for="message" id="message">Menssagem</label>
                     <textarea name="message" placeholder="Escreva aqui!" required></textarea>
                     <input type="hidden" name="_next" value="https://deivison1.github.io/Estudos-HTML-CSS-JAVASCRIPT/html5/obrigado">
                     <button type="submit">Enviar</button>
@@ -77,13 +77,13 @@
         </section>
 
     <footer class="footer-container">
-        <section class="footer-section" id="contato">
+        <section class="footer-section">
             <h1 class="logo">
                 Deivison Santos
             </h1>
                 <p class="descricao">
                     Desenvolvido por Deivison Santos de Jesus.
-                    Esta é uma mini loja virtual feita apenas com Javascript, logo abaixo estão minhas redes para contato!
+                    Esta é uma mini loja virtual feita apenas com Javascript, logo abaixo estão meu perfil profissional e repositório!
                 </p>
                 <div class="social-media">
                     <a href="https://www.linkedin.com/in/deivison-santos-143a60153/" target="_blank">
@@ -95,7 +95,7 @@
                 </div>
         </section>
     </footer>
-
+    
     <script src="main.js"></script>
 </body>
 </html>
