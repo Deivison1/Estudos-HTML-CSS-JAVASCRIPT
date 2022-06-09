@@ -23,20 +23,24 @@ body{
     padding: 0 40px;
 }
 .titulo{
-    
-    text-align: center;
-    padding: 2px;
+    height: 45px;
+    width: 100px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
     border-radius: 0.15rem;
     box-shadow: 2px 1px 1.5px 1px  #8383e5e2; 
 }
-h1{
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
+.titulo > img{
+    width: 60px;
+    height: 35px;
+    border-radius: 0.15rem;
+    box-shadow: 2px 1px 1.5px 1px  #8383e5e2;
 }
 .checkbox-container{
     position: absolute;
     right: 0;
+    margin-top: 10px;
 }
 #toggle{
     display: none;
@@ -105,9 +109,6 @@ li > a{
     background-color: #ffffff;
     transition: .3s ease-in-out;
 }
-.produto-single:hover{
-    box-shadow: 1px 2px 2px #8383e5e2;
-}
 .produto-single img{
     width: 80%;
 }
@@ -156,7 +157,7 @@ li > a{
     margin-right: 20px;
 }
 .container-form{
-    width: 50%;
+    width: 30%;
     padding: 5px;
     margin: auto;
     margin-top: 2rem;
@@ -216,7 +217,7 @@ button:focus{
 .footer-container{
     
     width: 100vw;
-    margin-top: 4rem;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,7 +233,7 @@ button:focus{
 .logo{
     
     height: 40px;
-    width: 50%;
+    width: 40%;
     padding: 0 1rem;
     display: flex;
     align-items: center;
@@ -242,7 +243,7 @@ button:focus{
     background-color: #ffffff;
 }
 .descricao{
-    width: 50%;
+    width: 40%;
     color: #ffffff;
     margin-top: 0.25rem;
     font-size: clamp(.813rem,.7rem + .55vw,1.125rem);
@@ -250,7 +251,7 @@ button:focus{
 }
 .social-media{
     display: flex;
-    width: 50%;
+    width: 40%;
     margin-top: 2px;
     margin-bottom: 10px;
 }

@@ -20,6 +20,13 @@ const items = [
         preco: 42.50,
         quantidade: 0
     },
+    {
+        id: 3,
+        nome: 'Sapato',
+        img: 'Sapato.png',
+        preco: 120.0,
+        quantidade: 0
+    },
 ]
 incinializarLoja = () => {
     var containerProdutos = document.getElementById('produtos');
@@ -48,7 +55,7 @@ atualizarCarrinho = () => {
         <div class="info-carrinho">
             <p>Produto: `+val.nome+`</p>
             <p>Qtde: `+val.quantidade+`</p>
-            <p>Preço:`+val.preco+`</p>
+            <p>Preço: `+val.preco+`</p>
         </div>
         `
         };
